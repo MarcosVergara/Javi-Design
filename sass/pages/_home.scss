@@ -9,6 +9,7 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 3;
+        box-shadow: 0 2rem 4rem rgba($color-black, .15);
     }
     &__flyer{
         width: 100%;
@@ -19,5 +20,10 @@
 .section-about{
     background-color: #f5f6fa;
     position: relative;
-    padding: 30rem 0;
+    padding: 30rem 0 15rem;
+}
+
+.section-prices{
+    padding: 15 0;
+    position: relative;
 }

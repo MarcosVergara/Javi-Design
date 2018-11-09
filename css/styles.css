@@ -54,7 +54,7 @@ body {
   margin: 0 0 40px; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 4.8rem;
     font-weight: 400;
     letter-spacing: .5rem;
     animation-name: moveInLeft;
@@ -113,6 +113,107 @@ body {
 
 .u-margin-right-small {
   margin-right: 3rem; }
+
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 52rem; }
+  .card__side {
+    background-color: orangered;
+    height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #fbc531, #c23616); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #8c7ae6, #192a56); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #E05E41, #c23616); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #8c7ae6, #192a56); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #fbc531, #c23616), url(../img/image-4.jpg); }
+    .card .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #8c7ae6, #192a56), url(../img/image-5.jpg); }
+    .card .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #fbc531, #c23616), url(../img/image-6.jpg); }
+    .card .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #8c7ae6, #192a56), url(../img/image-5.jpg); }
+  .card .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(224, 94, 65, 0.85), rgba(194, 54, 22, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(64, 115, 158, 0.85), rgba(25, 42, 86, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(224, 94, 65, 0.85), rgba(194, 54, 22, 0.85)); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, rgba(64, 115, 158, 0.85), rgba(25, 42, 86, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .bg-video {
   position: absolute;
@@ -240,7 +341,7 @@ body {
     height: 8rem; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
@@ -320,7 +421,8 @@ body {
     width: 60%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3; }
+    z-index: 3;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15); }
   .section-flyer__flyer {
     width: 100%;
     height: auto;
@@ -329,4 +431,8 @@ body {
 .section-about {
   background-color: #f5f6fa;
   position: relative;
-  padding: 30rem 0; }
+  padding: 30rem 0 15rem; }
+
+.section-prices {
+  padding: 15 0;
+  position: relative; }
