@@ -12,3 +12,8 @@ body{
     box-sizing: border-box;
     background-color: $color-grey-light-1;
 }
+@media (max-width: 767px){
+    html{
+        font-size: 31.25%;
+    }
+}

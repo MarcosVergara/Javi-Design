@@ -40,6 +40,10 @@ body {
   box-sizing: border-box;
   background-color: #dcdde1; }
 
+@media (max-width: 767px) {
+  html {
+    font-size: 31.25%; } }
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -96,6 +100,9 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+@media (max-width: 767px) {
+  padding: 1rem; }
 
 .u-center-text {
   text-align: center; }
@@ -356,7 +363,8 @@ body {
 .footer {
   background-color: #C6CAC7;
   padding: 10rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  position: relative; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 4rem; }
@@ -391,6 +399,12 @@ body {
     width: 80%;
     float: right; }
 
+@media (max-width: 767px) {
+  .footer .navigation {
+    display: block;
+    margin: 0 auto;
+    text-align: center; } }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -406,6 +420,8 @@ body {
       margin-right: 6rem; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
+  .row .colulmn-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
@@ -416,6 +432,12 @@ body {
     width: calc(2*((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * (6rem)); }
+
+@media (max-width: 767px) {
+  .col-1-of-2, .col-1-of-3, .col-2-of-3 {
+    width: 100% !important; }
+  .col-2-of-3 {
+    padding: 10rem 0; } }
 
 .section-flyer {
   position: relative;
@@ -443,3 +465,9 @@ body {
   padding: 15rem 0;
   position: relative;
   background-color: #f5f6fa; }
+
+@media (max-width: 767px) {
+  .section-flyer__flyer-box {
+    width: 100%; }
+  .section-prices {
+    padding: 30rem 10rem; } }

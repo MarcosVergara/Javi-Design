@@ -28,3 +28,13 @@
     position: relative;
     background-color: #f5f6fa;
 }
+@media (max-width: 767px){
+    .section-flyer{
+        &__flyer-box{
+            width: 100%;
+        }
+    }
+    .section-prices{
+        padding: 30rem 10rem;
+    }
+}
