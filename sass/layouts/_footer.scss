@@ -13,7 +13,7 @@
         height: auto;
     }
     &__navigation{
-        border-top: 1px solid $color-grey-light-1;
+        border-top: 1px solid $color-primary;
         padding-top: 2rem;
         display: inline-block;
     }
@@ -31,7 +31,7 @@
 
     &__link{
         &:link, &:visited{
-            color: $color-grey-light-1;
+            color: $color-primary;
             background-color: $color-grey-dark-3;
             text-decoration: none;
             text-transform: uppercase;
@@ -45,8 +45,8 @@
         }
     }
     &__copyright{
-        color: $color-grey-light-1;
-        border-top: 1px solid $color-grey-light-1;
+        color: $color-primary;
+        border-top: 1px solid $color-primary;
         padding-top: 2rem;
         width: 80%;
         float: right; 
