@@ -82,6 +82,10 @@ body {
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-secondary span {
+    font-size: 2.5rem; }
+  .heading-secondary--red {
+    background-image: linear-gradient(to right, #fbc531, #c23616); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -106,7 +110,7 @@ body {
   margin-bottom: 2rem; }
 
 .u-margin-bottom-big {
-  margin-top: 8rem; }
+  margin-bottom: 8rem; }
 
 .u-margin-top-huge {
   margin-top: 10rem; }
@@ -140,7 +144,7 @@ body {
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #8c7ae6, #192a56); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #E05E41, #c23616); }
+        background-image: linear-gradient(to right bottom, #fbc531, #c23616); }
       .card__side--back-4 {
         background-image: linear-gradient(to right bottom, #8c7ae6, #192a56); }
   .card:hover .card__side--front {
@@ -173,6 +177,8 @@ body {
     top: 12rem;
     right: 2rem;
     width: 75%; }
+    .card .card__heading--1 {
+      width: 85%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -434,5 +440,6 @@ body {
   padding: 30rem 0 15rem; }
 
 .section-prices {
-  padding: 15 0;
-  position: relative; }
+  padding: 15rem 0;
+  position: relative;
+  background-color: #f5f6fa; }

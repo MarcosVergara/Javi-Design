@@ -36,7 +36,7 @@
             &-3{
                 background-image: 
                                 linear-gradient(to right bottom,
-                                $color-secondary,
+                                $color-tertiary-light,
                                 $color-secondary-dark);
             }
             &-4{
@@ -100,6 +100,9 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
+        &--1{
+            width: 85%;
+        }
     }
     &__heading-span{
         padding: 1rem 1.5rem;
