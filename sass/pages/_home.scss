@@ -1,0 +1,23 @@
+.section-flyer{
+    position: relative;
+    padding: 10rem 0;
+    background-color: #f5f6fa;
+    &__flyer-box{
+        position: absolute;
+        top: 10rem;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+    &__flyer{
+        width: 100%;
+        height: auto;
+        z-index: 3;
+    }
+}
+.section-about{
+    background-color: #f5f6fa;
+    position: relative;
+    padding: 30rem 0;
+}

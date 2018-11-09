@@ -1,0 +1,20 @@
+.header{
+    position: relative;
+    height: 100vh;
+    &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo{
+        height: 8rem;
+    }
+    &__text-box{
+        position: absolute;
+        top:50%;
+        left: 50%; 
+        width: 90%; 
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
